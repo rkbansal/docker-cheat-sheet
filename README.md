@@ -4,7 +4,7 @@
 
 ##### `docker version` to get the version of docker
 ##### `docker run your_container_name_or_id_or_an_image` use this command to run a docker container
-
+##### `docker run --name your_custom_name_for_container image_name` use this command to run a docker container with user defined name
 ##### `docker run -i your_container_name_or_id_or_an_image` use this command to run a docker container interactive mode (STDIN)
 
 ##### `docker run -it your_container_name_or_id_or_an_image` use this command to run a docker container interaction mode with terminal
