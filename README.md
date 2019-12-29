@@ -38,3 +38,5 @@
 ##### `docker run -p your_port:docker_port your_container_name_or_id`
 
 ##### `docker run -v docker_host_dir:docker_container_directory your_container_name_or_id`
+
+##### `docker run -e ENV_VARIABLE_NAME=VARIABLE_VALUE your_container_name_or_id`
