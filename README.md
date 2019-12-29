@@ -40,3 +40,23 @@
 ##### `docker run -v docker_host_dir:docker_container_directory your_container_name_or_id`
 
 ##### `docker run -e ENV_VARIABLE_NAME=VARIABLE_VALUE your_container_name_or_id`
+
+##### `docker run --entrypoint your_entrypoint_command your_container_name_or_id your_command`
+  eg. docker run --entrypoint sleep2.0 ubuntu-sleeper 10
+
+### Networking commands
+#### There are 3 types of networks in docker (Bridge, None, Host)
+##### `docker run Ubuntu` (type -> Bridge) by default the container is available to every container inside the docker host
+##### `docker run Ubuntu --network=none` (type -> None) doesn't connect the container to any other container
+##### `docker run Ubuntu --network=host` (type -> Host) connect the server to the docker host on the same port, so it will be accessible outside of docker host
+
+### Build from Dockerfile
+
+##### `docker build ./` Current directory must have a Dockerfile
+
+### Dockerfile commands
+
+### `FROM` eg. FROM UBUNTU
+### `ENTRYPOINT` eg. ENTRYPOINT["sleep"] won't get override by cmd arguments
+### `CMD` eg. CMD sleep 100 or CMD["sleep", "100"] will get override by cmd arguments
+
